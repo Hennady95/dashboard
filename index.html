@@ -1,11 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="source/style/main.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
 </head>
+
 <body>
-    
+    <div class="wraper">
+
+        <nav class="navigation">
+            
+            <div class="logo">
+                <span>W</span>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li class="home"><a href="#">Home</a></li>
+                    <li class="statistics"><a href="#">Statistics</a></li>
+                    <li class="users"><a href="#">Users</a></li>
+                    <li class="settings"><a href="#">Settings</a></li>
+                    <li class="quires"><a href="#">Quires</a></li>
+                </ul>
+                <button class="exit"></button>
+            </div>
+            <div class="burger">
+                <div class="burger__line"></div>
+            </div>
+        </nav>
+
+        <header class="header">
+            <div class="header__menu">
+                <div class="menu__settings">
+                    <div class="select_btn">
+                        <div></div>
+                        <span class="circle"></span>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <button class="folder_btn"></button>
+                    <div class="vertical-line"></div>
+                    <button class="settings_btn"></button>
+                </div>
+
+                <form action="" class="search">
+                    <input type="text" class="search__text" value="Search Anything Here ...">
+                    <button type="submit" class="search__btn"></button>
+                </form>
+
+                <div class="account">
+                    <div class="vertical-line"></div>
+                    <button class="upload_btn"></button>
+                    <div class="vertical-line"></div>
+                    <button class="message_btn"></button>
+                    <div class="vertical-line"></div>
+                    <button class="online_btn"></button>
+                    <img src="source/img/avatars/kendall_Jenner.svg" alt="kendall Jenner">
+                    <div>
+                        <p class="name">Kendall Jenner</p>
+                        <p class="role">Cheif Authority</p>
+                    </div>
+                    <button class="alter_menu"></button>
+                </div>
+            </div>
+
+            <div class="header__statistics">
+                <ul>
+                    <li>
+                        <p class="items__header">Daily Visitors</p>
+                        <p class="items__content">150,0000</p>
+                        <p class="items__score"><span class="triangle-up">1020</span>&nbsp;&nbsp;&nbsp;<span
+                                class="triangle-down">1020</span></p>
+                    </li>
+                    <li>
+                        <p class="items__header">Daily Customers</p>
+                        <p class="items__content">120,0000</p>
+                        <p class="items__score"><span class="triangle-up">1020</span>&nbsp;&nbsp;&nbsp;<span
+                                class="triangle-down">1020</span></p>
+                    </li>
+                    <li>
+                        <p class="items__header">Daily Orders</p>
+                        <p class="items__content">900,000</p>
+                        <p class="items__score"><span class="triangle-up">1020</span>&nbsp;&nbsp;&nbsp;<span
+                                class="triangle-down">1020</span></p>
+                    </li>
+                    <li>
+                        <p class="items__header">Daily Sales</p>
+                        <p class="items__content">850,000</p>
+                        <p class="items__score"><span class="triangle-up">1020</span>&nbsp;&nbsp;&nbsp;<span
+                                class="triangle-down">1020</span></p>
+                    </li>
+                    <li>
+                        <p class="items__header">Daily Shipments</p>
+                        <p class="items__content">750,000</p>
+                        <p class="items__score"><span class="triangle-up">1020</span>&nbsp;&nbsp;&nbsp;<span
+                                class="triangle-down">1020</span></p>
+                    </li>
+                    <li>
+                        <p class="items__header">Daily Revenue</p>
+                        <p class="items__content">$985,0000</p>
+                        <p class="items__score"><span class="triangle-up">1020</span>&nbsp;&nbsp;&nbsp;<span
+                                class="triangle-down">1020</span></p>
+                    </li>
+                    <li>
+                        <p class="items__header">Daily Reviews</p>
+                        <p class="items__content">600,000</p>
+                        <p class="items__score"><span class="triangle-up">1020</span>&nbsp;&nbsp;&nbsp;<span
+                                class="triangle-down">1020</span></p>
+                    </li>
+                </ul>
+                <button class="add_elements">+ Add Stactics</button>
+            </div>
+        </header>
+
+        <div class="container">
+            <!--main aside footer-->
+            <main class="main">
+                <div class="monthly-progress">
+                    <div class="monthly-header">
+                        <h6 class="title">Monthly Revenue Progress</h6>
+                        <div class="manthly-menu">
+                            <button class="manthly-btn">Month</button>
+                            <button class="manthly-btn">Day</button>
+                            <button class="manthly-btn">Year</button>
+                            <button class="manthly-burger"></button>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <ul class="vertical-items">
+                            <li>400k</li>
+                            <li>300k</li>
+                            <li>200k</li>
+                            <li>100k</li>
+                        </ul>
+                        <img src="source/img/main/progress-grraph.png" alt="progress graph">
+                        <ul class="horizontal-items">
+                            <li>Jan</li>
+                            <li>Feb</li>
+                            <li>Mar</li>
+                            <li>Apr</li>
+                            <li>May</li>
+                            <li>Jun</li>
+                            <li>Jul</li>
+                            <li>Aug</li>
+                            <li>Sep</li>
+                            <li>Oct</li>
+                            <li>Nov</li>
+                            <li>Doc</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="revenue">
+                    <h4 class="box__title">Revenue Per Hour</h4>
+                    <img src="source/img/main/revenue.png" alt="map" class="circle">
+                    <p class="items__score"><span class="triangle-up">1020</span>&nbsp;&nbsp;&nbsp;<span
+                            class="triangle-down">1020</span></p>
+                </div>
+                <div class="feed">
+                    <h6 class="feed__title">Customers Feed</h6>
+                    <div class="item">
+                        <div class="user">
+                            <img src="source/img/avatars/Sophie_Turner.svg" alt="Sophie_Turner">
+                            <p class="time">10 Min Ago</p>
+                        </div>
+                        <div class="comments">
+                            <div class="comments-box">
+                                <p class="comment"><span class="bold">Sophie Turner</span> is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                    since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type</p>
+                            </div>
+                            <div class="inner-comments">
+                                <div class="comments-box">
+                                    <p class="comment"><span class="bold">Sophie Turner</span> is simply dummy text of the printing and
+                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                        since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type</p>
+                                </div>
+                                <div class="comments-box">
+                                    <p class="comment"><span class="bold">Sophie Turner</span> is simply dummy text of the printing and
+                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                        since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="user">
+                            <img src="source/img/avatars/Peter_Quill.svg" alt="Peter_Quill">
+                            <p class="time">15 Min Ago</p>
+                        </div>
+                        <div class="comments">
+                            <div class="comments-box">
+                                <p class="comment"><span class="bold">Sophie Turner</span> is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                    since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__inner">
+                    <div class="tasks">
+                        <h6 class="task__title">Todays Task</h6>
+                        <div class="todos">
+                            <div class="todo__item">
+                                <input type="checkbox" class="checkbox" id="check1">
+                                <label class="todo-name" for="check1"><span></span> Arrange</label>
+                                <input type="text" name="todo" class="todo-text" value="simply dummy text of the printing and......">
+                                <p class="todo-time">12:24 AM</p>
+                            </div>
+                            <div class="todo__item">
+                                <input type="checkbox" class="checkbox" id="check2">
+                                <label class="todo-name" for="check2"><span></span> Shipment</label>
+                                <input type="text" name="todo" class="todo-text" value="simply dummy text of the printing and......">
+                                <p class="todo-time">12:24 AM</p>
+                            </div>
+                            <div class="todo__item">
+                                <input type="checkbox" class="checkbox" id="check3">
+                                <label class="todo-name" for="check3"><span></span> Make List</label>
+                                <input type="text" name="todo" class="todo-text" value="simply dummy text of the printing and......">
+                                <p class="todo-time">12:24 AM</p>
+                            </div>
+                            <div class="todo__item">
+                                <input type="checkbox" class="checkbox" id="check4">
+                                <label class="todo-name" for="check4"><span></span> Review</label>
+                                <input type="text" name="todo" class="todo-text" value="simply dummy text of the printing and......">
+                                <p class="todo-time">12:24 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-container">
+                        <div class="box">
+                            <h4 class="box__title">Progress</h4>
+                            <div class="graph">
+                                <ul>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <ul>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <ul>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <ul>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <ul>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <ul>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <ul>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <ul>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li class="disabled"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <p class="box__text">$150,0000</p>
+                            <p class="items__score"><span class="triangle-up">1020</span>&nbsp;&nbsp;&nbsp;<span
+                                    class="triangle-down">1020</span></p>
+                        </div>
+                        <div class="box">
+                            <h4 class="box__title">Shipments</h4>
+                            <img src="source/img/main/map.png" alt="map" class="map">
+                            <div class="shipment-content">
+                                <p class="shipment-text">$15,000</p>
+                                <p class="items__score"><span class="triangle-up">1020</span>&nbsp;&nbsp;&nbsp;<span
+                                        class="triangle-down">1020</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <div class="conteiner">
+                <aside class="aside">
+                    <div class="aside-menu">
+                        <button class="aside-btn"></button>
+                        <button class="aside-btn"></button>
+                        <button class="aside-btn"></button>
+                    </div>
+                    <div class="list-people">
+                        <div class="list-item">
+                            <img src="source/img/avatars/Jennifer_Lawrence.svg" alt="Jennifer Lawrence" class="avatar">
+                            <div class="item-content">
+                                <p class="name">Jennifer Lawrence</p>
+                                <p class="role">Cheif Authority</p>
+                            </div>
+                            <button class="open-chat"></button>
+                        </div>
+                        <div class="list-item">
+                            <img src="source/img/avatars/Brad_Pitt.svg" alt="Brad Pitt" class="avatar">
+                            <div class="item-content">
+                                <p class="name">Brad Pitt</p>
+                                <p class="role">Cheif Authority</p>
+                            </div>
+                            <button class="open-chat"></button>
+                        </div>
+                        <div class="list-item">
+                            <img src="source/img/avatars/Leonardo_Dicaprio.svg" alt="Leonardo Dicaprio" class="avatar">
+                            <div class="item-content">
+                                <p class="name">Leonardo Dicaprio</p>
+                                <p class="role">Cheif Authority</p>
+                            </div>
+                            <button class="open-chat"></button>
+                        </div>
+                        <div class="list-item">
+                            <img src="source/img/avatars/Jesse_Eisenberg.svg" alt="Jesse Eisenberg" class="avatar">
+                            <div class="item-content">
+                                <p class="name">Jesse Eisenberg</p>
+                                <p class="role">Cheif Authority</p>
+                            </div>
+                            <button class="open-chat"></button>
+                        </div>
+                        <div class="list-item">
+                            <img src="source/img/avatars/kristen_Stewart.svg" alt="kristen Stewart" class="avatar">
+                            <div class="item-content">
+                                <p class="name">kristen Stewart</p>
+                                <p class="role">Cheif Authority</p>
+                            </div>
+                            <button class="open-chat"></button>
+                        </div>
+                        <div class="list-item">
+                            <img src="source/img/avatars/Ben_Affleck.svg" alt="Ben Affleck" class="avatar">
+                            <div class="item-content">
+                                <p class="name">Ben Affleck</p>
+                                <p class="role">Cheif Authority</p>
+                            </div>
+                            <button class="open-chat"></button>
+                        </div>
+                    </div>
+                    <div class="people-search">
+                        <input type="search" name="" value="Search Peoples, Chats and Reviews">
+                        <button class="search-btn"></button>
+                        <button class="edit-btn"></button>
+                    </div>
+                </aside>
+
+                <footer class="footer">
+                    <h4>Featured Companys</h4>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="source/img/aside-icon/rdio.svg" alt="rdio"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="source/img/aside-icon/css-3.svg" alt="css-3"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="source/img/aside-icon/deviantart.svg" alt="rdio"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="source/img/aside-icon/xing.svg" alt="rdio"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="source/img/aside-icon/vimeo.svg" alt="rdio"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="source/img/aside-icon/vk.svg" alt="rdio"></a>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>
