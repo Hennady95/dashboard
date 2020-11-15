@@ -59,7 +59,7 @@
 
     .home {
         position: relative;
-        background: url(source/img/icon/home.svg) no-repeat 2.5em 1.5em;
+        background: url(../img/icon/home.svg) no-repeat 2.5em 1.5em;
     }
 
     li:hover {
@@ -77,22 +77,22 @@
 
     .statistics {
         position: relative;
-        background: url(source/img/icon/statistics.svg) no-repeat 2.5em 1.5em;
+        background: url(../img/icon/statistics.svg) no-repeat 2.5em 1.5em;
     }
 
     .users {
         position: relative;
-        background: url(source/img/icon/users.svg) no-repeat 2.5em 1.5em;
+        background: url(../img/icon/users.svg) no-repeat 2.5em 1.5em;
     }
 
     .settings {
         position: relative;
-        background: url(source/img/icon/settings.svg) no-repeat 2.5em 1.5em;
+        background: url(../img/icon/settings.svg) no-repeat 2.5em 1.5em;
     }
 
     .quires {
         position: relative;
-        background: url(source/img/icon/quires.svg) no-repeat 2.5em 1.5em;
+        background: url(../img/icon/quires.svg) no-repeat 2.5em 1.5em;
     }
 
     .exit {
@@ -100,7 +100,7 @@
         width: 4em;
         border: none;
         margin-top: auto;
-        background: url(source/img/icon/exit.svg) no-repeat center;
+        background: url(../img/icon/exit.svg) no-repeat center;
     }
 
 } 
