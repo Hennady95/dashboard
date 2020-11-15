@@ -1,0 +1,178 @@
+.header {
+    max-width: 129.8em;
+    padding-left: 7em;
+    background: #FFFFFF;
+
+    .header__menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #F1F1F1;
+    }
+
+    .menu__settings {
+        position: relative;
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        border-right: 2px solid #F1F1F1;
+    }
+
+    .vertical-line {
+        height: 7.1em;
+        width: 0.2em;
+        background: #F1F1F1;
+    }
+
+    .select_btn {
+        position: relative;
+        display: flex;
+        height: 1.8em;
+        width: 3.3em;
+        margin: 0 1.9em;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        text-align: center;
+        background: linear-gradient(left,#FD5278,#FC7A5C);
+        border-radius: 2em;    
+    }
+
+    .folder_btn {
+        @include header__btn ($btn-OF);
+    }
+
+    .settings_btn {
+        @include header__btn ($btn-settings);
+    }
+
+    .upload_btn {
+        @include header__btn ($btn-upload);
+    }
+
+    .message_btn {
+        @include header__btn ($btn-message);
+    }
+
+    .online_btn {
+        @include header__btn ($btn-online);
+    }
+
+    .alter_menu {
+        @include header__btn ($btn-kebab);
+    }
+
+    .circle {
+        height: 0.6em;
+        width: 0.6em;
+        background: #FFFFFF;
+        border-radius: 50%;
+    }
+
+    .circle::before {
+        position: absolute;
+        content: '';
+        left: 0.7em;
+        height: 0.6em;
+        width: 0.6em;
+        background: #FFFFFF;
+        border-radius: 50%;
+    }
+
+    .circle::after {
+        position: absolute;
+        content: '';
+        left: 2.1em;
+        height: 0.6em;
+        width: 0.6em;
+        background: #FFFFFF;
+        border-radius: 50%;
+    }
+
+    form {
+        position: relative;
+    }
+    .search__text {
+        height: 3.4em;
+        width: 30em;
+        padding: 1.2em 0 1.1em 1.3em;
+        font-family: 'Lato', sans-serif;;
+        font-size: 12px;
+        color: #C8C8C8;
+        background: #F1F1F1;
+        border: none;
+        border-radius: 2em; 
+    }
+
+    .search__btn {
+        border: none;
+        height: 1.6em;
+        width: 1.6em;
+        position: absolute;
+        top: 1em;
+        right: 2em;
+        cursor: pointer;
+    }
+
+    .search__btn::before {
+        content: "\f002";
+        font-size: large;
+        font-family: FontAwesome;
+        color: #C8C8C8;
+    }
+
+    .account {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 7.1em;
+    }
+
+    .account img {
+        height: 7.1em;
+        width: 7.1em;
+    }
+
+    .header__statistics {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__statistics li {
+        display: inline-block;
+        padding: 2.1em 3.4em;
+    }
+
+    .items__header {
+        @include header__text (1.3em, #777777);
+    }
+
+    .items__content {
+        @include header__text (2em, #FC7A5C);
+    }
+
+    .items__score {
+        position: relative;
+        padding-left: 1em;
+        @include header__text (1.3em, #BFBFBF);
+    }
+
+    .add_elements {
+        height: 0.9em;
+        width: 7.8em;
+        @include header__text (1.2em, #FC7A5C);
+        padding: 0;
+        border: none;
+        background: transparent;
+    }
+
+    .triangle-up::before {
+        @include triangle(0.1em, 0.3em);
+    }
+
+    .triangle-down::before {
+        @include triangle(0.2em, 3.4em);
+    }
+}
