@@ -432,8 +432,8 @@ textarea {
   position: fixed;
   height: 100vh;
   width: 7em;
-  background: -webkit-gradient(linear, left bottom, left top, from(#FD5272), to(#F87359));
-  background: linear-gradient(bottom, #FD5272, #F87359);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FD5272), to(#F87359));
+  background: linear-gradient(to bottom, #FD5272, #F87359);
   z-index: 1;
 }
 
@@ -612,8 +612,8 @@ textarea {
           align-items: center;
   border: none;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(#FD5278), to(#FC7A5C));
-  background: linear-gradient(left, #FD5278, #FC7A5C);
+  background: -webkit-gradient(linear, right top, left top, from(#FD5278), to(#FC7A5C));
+  background: linear-gradient(to left, #FD5278, #FC7A5C);
   border-radius: 2em;
 }
 
@@ -903,8 +903,8 @@ textarea {
 
 .main .monthly-progress .manthly-btn:hover {
   color: #FFFFFF;
-  background: -webkit-gradient(linear, left top, right top, from(#FD5272), to(#F87359));
-  background: linear-gradient(left, #FD5272, #F87359);
+  background: -webkit-gradient(linear, right top, left top, from(#FD5272), to(#F87359));
+  background: linear-gradient(to left, #FD5272, #F87359);
 }
 
 .main .monthly-progress .vertical-items {
@@ -1160,8 +1160,8 @@ textarea {
   margin: 0 0.3em;
   border: none;
   border-radius: 1em;
-  background: -webkit-gradient(linear, left bottom, left top, from(#8743B0), to(#92A6EA));
-  background: linear-gradient(bottom, #8743B0, #92A6EA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#8743B0), to(#92A6EA));
+  background: linear-gradient(to bottom, #8743B0, #92A6EA);
   overflow: hidden;
 }
 
@@ -1249,8 +1249,8 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   height: 4.8em;
-  background: -webkit-gradient(linear, left top, right top, from(#FD5272), to(#F87359));
-  background: linear-gradient(left, #FD5272, #F87359);
+  background: -webkit-gradient(linear, right top, left top, from(#FD5272), to(#F87359));
+  background: linear-gradient(to left, #FD5272, #F87359);
 }
 
 .aside .aside-btn:nth-child(1) {
@@ -1357,7 +1357,7 @@ textarea {
 .aside .people-search input {
   width: 16.1em;
   padding-bottom: 0.6em;
-  font-style: 1em;
+  font-size: 1em;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
   color: #C0C0C0;
