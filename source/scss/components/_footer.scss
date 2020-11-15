@@ -1,0 +1,57 @@
+.footer {
+    width: 27.3em;
+    padding-top: 2.9em;
+    padding-bottom: 3.3em;
+
+    h4 {
+        padding-bottom: 1.3em; ;
+        font-family: 'Lato',sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+        text-align: center;
+        color: #777777;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2.1em;
+        justify-content: space-between;
+        padding: 0 3.9em;
+    }
+
+    li {
+        display: inline-flex;
+        width: 5.5em;
+        height: 5.5em;
+        margin: 0.8em 0;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2em;
+    }
+
+    ul li:nth-child(1){
+        background: linear-gradient(320deg, #7266B6, #C693E7 );
+    }
+
+    ul li:nth-child(2){
+        background: linear-gradient(320deg, #5EC2C8,#6AEACB);
+    }
+
+    ul li:nth-child(3){
+        background: linear-gradient(320deg, #BE8689, #F7C6A8);
+    }
+
+    ul li:nth-child(4){
+        background: linear-gradient(320deg, #894CB5, #758AE4 );
+    }
+
+    ul li:nth-child(5){
+        background: linear-gradient(320deg, #5C90E8, #39CDE0 );
+    }
+
+    ul li:nth-child(6){
+        background: linear-gradient(320deg,#F59083, #FBD88C );
+    }
+    
+}
