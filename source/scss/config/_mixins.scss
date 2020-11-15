@@ -1,0 +1,45 @@
+@mixin burger_line ($position,$top) {
+    position: $position;
+    content: '';
+    top: $top;
+    left: 0;
+    height: 0.5em;
+    width: 3em;
+    border-radius: 1em;
+    background-color:#FD5272;
+}
+
+@mixin header__btn ($image) {
+    height: 2em;
+    width: 2.7em;
+    margin: 0 1.8em;
+    border: none;
+    background: url($image) no-repeat center;
+}
+
+@mixin header__text ($fs,$color){
+    padding-bottom: 9px; ;
+    font-family: 'Lato',sans-serif;
+    font-weight: bold;
+    font-size: $fs;
+    color: $color;
+}
+
+@mixin triangle ($top, $left) {
+    position: absolute;
+    left: $left;
+    top: $top;
+    content: '';
+    border: 0.25em solid transparent;
+    border-bottom: 0.5em solid #A889E9;
+}
+
+
+@mixin aside__btn($image) {
+    position: relative;
+    height: 100%;
+    width: 8em;
+    flex-grow: 1;
+    background: url($image) no-repeat center;
+    border: none;
+}
