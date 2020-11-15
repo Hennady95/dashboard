@@ -1282,7 +1282,7 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background: url("..img/aside-icon/like.svg") no-repeat center;
+  background: url("../img/aside-icon/like.svg") no-repeat center;
   border: none;
 }
 
