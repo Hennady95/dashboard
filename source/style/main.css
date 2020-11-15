@@ -512,7 +512,7 @@ textarea {
 
 .navigation .home {
   position: relative;
-  background: url(/source/img/icon/home.svg) no-repeat 2.5em 1.5em;
+  background: url(source/img/icon/home.svg) no-repeat 2.5em 1.5em;
 }
 
 .navigation li:hover {
@@ -530,22 +530,22 @@ textarea {
 
 .navigation .statistics {
   position: relative;
-  background: url(/source/img/icon/statistics.svg) no-repeat 2.5em 1.5em;
+  background: url(source/img/icon/statistics.svg) no-repeat 2.5em 1.5em;
 }
 
 .navigation .users {
   position: relative;
-  background: url(/source/img/icon/users.svg) no-repeat 2.5em 1.5em;
+  background: url(source/img/icon/users.svg) no-repeat 2.5em 1.5em;
 }
 
 .navigation .settings {
   position: relative;
-  background: url(/source/img/icon/settings.svg) no-repeat 2.5em 1.5em;
+  background: url(source/img/icon/settings.svg) no-repeat 2.5em 1.5em;
 }
 
 .navigation .quires {
   position: relative;
-  background: url(/source/img/icon/quires.svg) no-repeat 2.5em 1.5em;
+  background: url(source/img/icon/quires.svg) no-repeat 2.5em 1.5em;
 }
 
 .navigation .exit {
@@ -553,7 +553,7 @@ textarea {
   width: 4em;
   border: none;
   margin-top: auto;
-  background: url(/source/img/icon/exit.svg) no-repeat center;
+  background: url(source/img/icon/exit.svg) no-repeat center;
 }
 
 .header {
