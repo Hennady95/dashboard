@@ -1,0 +1,98 @@
+.aside {
+    
+    .aside-menu {
+        display: flex;
+        height: 4.8em;
+        background: linear-gradient(left,#FD5272,#F87359);
+    }
+
+    .aside-btn:nth-child(1) {
+        @include aside__btn($btn-people);
+    }
+
+    .aside-btn:nth-child(2) {
+        @include aside__btn($btn-chat);
+    }
+    .aside-btn:nth-child(3) {
+        @include aside__btn($btn-like);
+    }
+
+    .aside-btn:hover {
+        background-color: #C34256;
+    }
+
+    .aside-btn:hover::after{
+        position: absolute;
+        content: '';
+        left: calc(50% - 0.8em);
+        top: calc(100%);
+        border: 0.7em solid transparent;
+        border-top: 0.8em solid  #C34256;
+    }
+
+    .list-people {
+        width: 100%;
+        padding-top: 2.4em;
+    }
+    .list-item {
+        display: flex;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 0.2em solid #F1F1F1;
+
+        img {
+            margin: 0 2em;
+        }
+
+        .item-content {
+            flex-grow: 1;
+        }
+    }
+
+    .list-item:nth-child(6) {
+        margin-bottom: 0;
+    }
+
+    .open-chat {
+        height: 1.6em;
+        width: 2em;
+        margin-right: 1em;
+        border: none;
+        background: url(/source/img/aside-icon/chat-dark.svg) no-repeat center;
+    }
+
+    .people-search {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.4em;
+        align-items: center;
+        background: #FCFCFC;
+    }
+
+    .people-search input {
+        width: 16.1em;
+        padding-bottom: 0.6em;
+        font-style: 1em;
+        font-family: 'Lato', sans-serif;
+        font-weight: lighter;
+        color: #C0C0C0;
+        border: none;
+        border-bottom: 0.2em solid #E9E9E9;
+    }
+
+    .search-btn {
+        width: 1.9em;
+        height: 1.9em;
+        border: none;
+        background: url(/source/img/aside-icon/search.svg);
+    }
+
+    .edit-btn {
+        width: 1.9em;
+        height: 1.9em;
+        border: none;
+        background: url(/source/img/aside-icon/edit.svg);
+    }
+}
