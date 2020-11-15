@@ -622,7 +622,7 @@ textarea {
   width: 2.7em;
   margin: 0 1.8em;
   border: none;
-  background: url("/source/img/header_settings/open_folder.svg") no-repeat center;
+  background: url("../img/header_settings/open_folder.svg") no-repeat center;
 }
 
 .header .settings_btn {
@@ -630,7 +630,7 @@ textarea {
   width: 2.7em;
   margin: 0 1.8em;
   border: none;
-  background: url("/source/img/header_settings/settings.svg") no-repeat center;
+  background: url("../img/header_settings/settings.svg") no-repeat center;
 }
 
 .header .upload_btn {
@@ -638,7 +638,7 @@ textarea {
   width: 2.7em;
   margin: 0 1.8em;
   border: none;
-  background: url("/source/img/header_settings/upload.svg") no-repeat center;
+  background: url("../img/header_settings/upload.svg") no-repeat center;
 }
 
 .header .message_btn {
@@ -646,7 +646,7 @@ textarea {
   width: 2.7em;
   margin: 0 1.8em;
   border: none;
-  background: url("/source/img/header_settings/message.svg") no-repeat center;
+  background: url("../img/header_settings/message.svg") no-repeat center;
 }
 
 .header .online_btn {
@@ -654,7 +654,7 @@ textarea {
   width: 2.7em;
   margin: 0 1.8em;
   border: none;
-  background: url("/source/img/header_settings/online.svg") no-repeat center;
+  background: url("../img/header_settings/online.svg") no-repeat center;
 }
 
 .header .alter_menu {
@@ -662,7 +662,7 @@ textarea {
   width: 2.7em;
   margin: 0 1.8em;
   border: none;
-  background: url("/source/img/header_settings/kebab_menu.png") no-repeat center;
+  background: url("../img/header_settings/kebab_menu.png") no-repeat center;
 }
 
 .header .circle {
@@ -1260,7 +1260,7 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background: url("/source/img/aside-icon/people.svg") no-repeat center;
+  background: url("../img/aside-icon/people.svg") no-repeat center;
   border: none;
 }
 
@@ -1271,7 +1271,7 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background: url("/source/img/aside-icon/chat.svg") no-repeat center;
+  background: url("../img/aside-icon/chat.svg") no-repeat center;
   border: none;
 }
 
@@ -1282,7 +1282,7 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background: url("/source/img/aside-icon/like.svg") no-repeat center;
+  background: url("..img/aside-icon/like.svg") no-repeat center;
   border: none;
 }
 
