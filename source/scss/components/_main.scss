@@ -359,10 +359,12 @@
 
     .triangle-up::before {
         @include triangle(0.1em, calc(50% - 2.7em));
+        border-bottom: 0.5em solid #A889E9;
     }
 
     .triangle-down::before {
         @include triangle(0.1em, calc(50% + 0.3em));
+        border-top: 0.5em solid #FD5278;
     }
 
     .map {
