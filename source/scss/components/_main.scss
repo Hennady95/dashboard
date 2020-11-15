@@ -53,7 +53,7 @@
             height: 2.4em;
             width: 2em;
             border: none;
-            background: url(/source/img/header_settings/kebab_menu.png) no-repeat center/cover;
+            background: url(../img/header_settings/kebab_menu.png) no-repeat center/cover;
         }
         
         .manthly-btn:nth-child(2){
@@ -221,12 +221,12 @@
             height:19px;
             margin:-1px 4px 0 0;
             vertical-align:middle;
-            background:url(/source/img/icon/unchecked.svg) no-repeat center/cover;
+            background:url(../img/icon/unchecked.svg) no-repeat center/cover;
             cursor:pointer;
         }
 
         input[type="checkbox"]:checked + label span {
-            background:url(/source/img/icon/checked.svg) no-repeat center/cover;
+            background:url(../img/icon/checked.svg) no-repeat center/cover;
         }
 
         .todo-name {
@@ -262,7 +262,7 @@
             content: '';
             height: 1em;
             width: 1em;
-            background: url(/source/img/icon/clock.svg) no-repeat center;
+            background: url(../img/icon/clock.svg) no-repeat center;
         }
 
         .todo__item:nth-child(4) {
