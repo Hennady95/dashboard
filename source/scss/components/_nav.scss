@@ -1,0 +1,106 @@
+.navigation {
+    position: fixed;
+    height: 100vh;
+    width: 7em;
+    background: linear-gradient(bottom,#FD5272,#F87359);
+    z-index: 1;
+
+    .burger {
+        display: none;
+        width: 5em;
+        height: 5em;
+        padding-top: 2.3em;
+        background: #FFFFFF;
+        border-radius: 1em;
+        box-shadow: inset 0px 0px 10px #f74c2a;
+        overflow: hidden;
+
+        &__line {
+            position: relative;
+            height: 0.5em;
+            width: 3em;
+            margin: 0 auto;
+            border-radius: 1em;
+            background-color: #FD5272;
+        }
+
+        &__line::before {
+            @include burger_line(absolute, -1em);
+        }
+
+        &__line::after {
+            @include burger_line(absolute, 1em);
+        }
+    }
+
+
+    ul {
+        width: 100%;
+    }
+
+    li{
+        display: block;
+        padding: 1em 0;
+        padding-top: 4em;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 92%;
+    }
+
+    .home {
+        position: relative;
+        background: url(/source/img/icon/home.svg) no-repeat 2.5em 1.5em;
+    }
+
+    li:hover {
+        background-color: #FD5272;
+    }
+
+    li:hover::after {
+        position: absolute;
+        content: '';
+        left: 100%;
+        top: 2.5em;
+        border: 0.7em solid transparent;
+        border-left: 0.8em solid #F87359;
+    }
+
+    .statistics {
+        position: relative;
+        background: url(/source/img/icon/statistics.svg) no-repeat 2.5em 1.5em;
+    }
+
+    .users {
+        position: relative;
+        background: url(/source/img/icon/users.svg) no-repeat 2.5em 1.5em;
+    }
+
+    .settings {
+        position: relative;
+        background: url(/source/img/icon/settings.svg) no-repeat 2.5em 1.5em;
+    }
+
+    .quires {
+        position: relative;
+        background: url(/source/img/icon/quires.svg) no-repeat 2.5em 1.5em;
+    }
+
+    .exit {
+        height: 4em;
+        width: 4em;
+        border: none;
+        margin-top: auto;
+        background: url(/source/img/icon/exit.svg) no-repeat center;
+    }
+
+} 
