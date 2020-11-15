@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .wraper {
+        position: relative;
+        width: 1368px;
+        margin: 0 auto;
+        font-size: 10px;
+    }
+
+    .logo {
+        display: flex;
+        height: 7.1em;
+        width: 7em;
+        justify-content: center;
+        align-items: center;
+        font-family: $Logofont;
+        box-shadow: 5px 0px 5px #F1F1F1;
+        background: #FFFFFF;
+    }
+
+    .logo span {
+        font-size: 3em;
+        color: #FD7858;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .name {
+        @include header__text(1.3em, #777777);
+    }
+
+    .role {
+        font-family: 'Lato', sans-serif;
+        font-weight: normal;
+        font-size: 1em;
+        color: #BFBFBF;
+    }
+
+}
