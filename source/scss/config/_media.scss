@@ -1,0 +1,448 @@
+@media(max-width: 1280px) {
+    
+    .wraper {
+        max-width: 1280px;
+    }
+
+    .navigation {
+        .menu {
+            height: 88%;
+        }
+    }
+
+    .header {
+
+        ul{
+            width: 150em;
+        } 
+
+        .add_elements {
+            height: 3em;
+            margin-right: 4.1em;
+        }
+
+        .header__statistics li {
+            display: inline-block;
+            padding: 1.5em 3em;
+        }
+
+    }
+
+    .main {
+
+        .monthly-progress {
+            width: 66em;
+
+            img {
+                width: 50em;
+            }
+
+            .horizontal-items li {
+                margin: 0 0.9em;
+            }
+        }
+        
+
+        .feed {
+            width: 43em;
+            margin: 1em;
+            padding: 3em 1em 4.5em;
+            background-color: #FFFFFF;
+
+            .comments-box {
+                width: 32.5em;
+                padding: 2.1em 1em 1.8em 2.3em;
+            }
+
+            .inner-comments .comments-box {
+                margin: 2em 2em;
+                width: 30em;
+            }
+        }
+
+        .container__inner {
+            width: 45em;
+        }
+
+        .todos {
+            width: 40em;
+            overflow: scroll;
+        }
+
+        .box {
+            width: 21.5em;
+        }
+    }
+}
+
+@media(max-width: $LP) {
+    .navigation {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 70px;
+
+        .burger {
+            position: absolute;
+            display: block;
+            top: 1em;
+            right: 2em;
+        }
+
+        ul {
+            width: 7em;
+        }
+
+        li{
+            display: inline-block;
+            padding: 1em 0;
+            padding-top: 4em;
+            text-align: center;
+        }
+
+        .menu {
+            display: none;
+        }
+    }
+
+    .wraper {
+        width: 100vw;
+
+        .container {
+            flex-wrap: wrap;
+        }
+    }
+
+    .header {
+        width: 100vw;
+        padding: 0;
+
+        .header__menu {
+            flex-direction: column;
+            border: none;
+        }
+
+        .search__text {
+            width: 100vw;
+            margin: 0 auto;
+        }
+
+        .menu__settings {
+            margin: 1em 0;
+            border: 2px solid #BFBFBF;
+            order: 1;
+        }
+
+        .account {
+            margin: 0.5em auto;
+            border: 2px solid #BFBFBF;
+            order: 2;
+
+            img {
+                height: calc(100% - 4px);
+            }
+        }
+
+        .search {
+            order: 3;
+        }
+
+        .header__statistics {
+            max-width: 45em;
+            overflow: scroll;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+        }
+    }
+
+    .main {
+
+        padding: 0;
+
+        .monthly-progress {
+            width: 100vw;
+            margin: 1em auto;
+
+            .content {
+                width: 90vw;
+                flex-wrap: nowrap;
+                overflow: scroll;
+            }
+        }
+
+        .revenue {
+            width: 60%;
+            margin: 1em auto;
+            flex-grow: 0;
+        }
+
+        .feed {
+            width: 100vw;
+            margin: 1em auto;
+
+            .comments-box {
+                width: 95%;
+            }
+
+            .inner-comments .comments-box {
+                width: 95%;
+            }
+        }
+
+        .container__inner {
+            width: 98%;
+        }
+
+        .box {
+            padding: 1em 0;
+            margin: 1em auto;
+        }
+
+        .box-container {
+            display: block;
+        }
+
+        .todos {
+            width: 33em;
+            overflow: scroll;
+        }
+
+        .tasks {
+            width: 98%;
+            padding: 1em 0 1em 1.5em;
+            background-color: #FFFFFF;
+        }
+
+    }
+
+    .conteiner {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .aside{
+        margin: 0 auto;
+
+        .list-people {
+            height: 30vh;
+            overflow: scroll;
+        }
+
+        .people-search {
+            padding: 1em 10%;
+            justify-content: center;
+
+            .search-btn {
+                margin: 0 1em;
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        ul {
+            width: 27.3em;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media(max-width: $ESP) {
+    
+    .header {
+        .search {
+            margin-left: 2.4em;
+        }
+    }
+    .main {
+        
+        .monthly-progress {
+            width: 100vw;
+
+            .content {
+                width: 87%;
+            }
+         }   
+        .feed {
+            width: 100vw;
+
+            .comments-box {
+                width: 22.5em;
+            }
+
+            .inner-comments .comments-box {
+                width: 20em;
+            }
+        }
+        
+        .container__inner {
+            width: 100vw;
+        }
+
+        .todos {
+            width: 28em;
+            overflow: scroll;
+        }
+
+    }
+}
+
+@media(max-height: $MP) {
+    .header {
+        .header__statistics {
+            max-width: 95%;
+        }
+
+        .add_elements {
+            margin: 3em;
+        }
+    }
+
+    .main {
+        .monthly-progress {
+            width: 85vw;
+
+            .content {
+                flex-wrap: wrap;
+            }
+        }
+
+        .feed {
+            .feed__title{
+                text-align: center;
+            }
+        }
+
+        .tasks {
+            width: 64vw;
+            margin: 0 auto;
+        }
+
+        .box-container {
+            display: flex;
+        }
+
+        .task__title {
+            text-align: center;
+        }
+
+        .todos {
+            width: 50em;
+            margin: 0 auto;
+        }
+    }
+
+    .aside {
+
+        .list-people {
+            height: 40vh;
+        }
+
+        .people-search {
+            padding: 1em 0;
+        }
+    }
+
+    .footer {
+
+        ul {
+            width: 100vw;
+        }
+    }
+}
+
+@media(max-height: $SP) {
+    
+    .header {
+        .header__statistics {
+            max-width: 100%;
+        }
+    }
+
+    .main {
+
+        .monthly-progress { 
+            width: 78vw;
+
+            .content {
+                overflow: scroll;
+                width: 100%;
+            }
+        }
+        .feed {
+
+            .feed__title{
+                text-align: center;
+            }
+        }  
+        .task__title{
+            text-align: center;
+        }
+        .todos {
+            width: 36em;
+            margin: 0 auto;
+        }
+
+        .box-container {
+            display: flex;
+        }
+    }
+
+    .aside {
+        .list-people {
+            height: 40vh;
+        }
+    }
+
+    .footer {
+        ul{
+            width: 100%;
+        }
+    }
+}
+
+@media(max-height: $ESP) {
+    .header {
+        .header__statistics {
+            max-width: 100%;
+        }
+    }
+
+    .main {
+
+        .feed {
+            .feed__title {
+                text-align: center;
+            }
+
+            .comments-box {
+                width: 46.5em;
+            }
+
+            .inner-comments .comments-box {
+                width: 44em;
+            }
+         }
+
+        .task__title {
+            padding-top: 1em;
+            text-align: center;
+        }
+
+        .todos {
+            width: 33em;
+            margin: 0 auto;
+            overflow: scroll;
+        }
+    }
+
+    .aside {
+        .list-people {
+            height: 50vh;
+        }
+    }
+}
