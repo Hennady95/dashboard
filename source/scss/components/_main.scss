@@ -1,0 +1,372 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.4em 1em 0.4em 8em;
+    background: #F1F1F1;
+
+    .monthly-progress {
+        width: 70.4em;
+        margin: 1em;
+        padding: 3em;
+        background-color: #FFFFFF;
+
+        .monthly-header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        .title {
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            font-size: 1.4em;
+            color: #777777;
+        }
+
+        img {
+            height: 11.7em;
+            width: 58.2em;
+            margin: 3.2em 0;
+        }
+
+        .manthly-menu{
+            display: flex;
+        }
+
+        .manthly-btn{
+            height: 2.4em;
+            width: 6.8em;
+            text-align: center;
+            color: #BFBFBF;
+            background: transparent;
+            border:none;
+            border-radius: 2em;
+        }
+
+        .manthly-burger {
+            height: 2.4em;
+            width: 2em;
+            border: none;
+            background: url(/source/img/header_settings/kebab_menu.png) no-repeat center/cover;
+        }
+        
+        .manthly-btn:nth-child(2){
+            height: 2.4em;
+            width: 4em;
+        }
+
+        .manthly-btn:nth-child(3){
+            height: 2.4em;
+            width: 4em;
+        }
+
+        .manthly-btn:hover {
+            color: #FFFFFF;
+            background: linear-gradient(left, #FD5272,#F87359);
+        }
+
+        .vertical-items {
+            height: 6em;
+            width: 3em;
+            margin-right: 2em;
+            font-family: 'Lato',sans-serif;
+            font-size: 1.2em;
+            color: #BFBFBF;
+        }
+
+        .vertical-items li {
+            margin: 2em 0;
+        }
+
+        .horizontal-items { 
+            margin-left: 4em;
+            font-family: 'Lato',sans-serif;
+            font-size: 1.2em;
+            color: #BFBFBF;
+        }
+
+        .horizontal-items li {
+            margin: 0 1em;
+            display: inline-block;
+        }
+    }
+
+    .box {
+        width: 24.1em;
+        padding-bottom: 2.3em;
+        text-align: center;
+        background-color: #FFFFFF;
+    }
+
+    .revenue {
+        margin: 1em;
+        flex-grow: 1;
+        text-align: center;
+        background-color: #FFFFFF;
+
+        .box__title {
+            margin: 2.2em 0 2em 0;
+        }
+    }
+
+    .circle {
+        height: 12.4em;
+        width: 12.4em;
+        margin-bottom: 3em;
+    }
+
+    .feed {
+        width: 46.7em;
+        margin: 1em;
+        padding: 3em 3em 4.5em;
+        background-color: #FFFFFF;
+
+        .feed__title {
+            margin: 0 0 2em 0;
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            font-size: 1.4em;
+            color: #777777;
+        }
+
+        .bold {
+            font-weight: 900;
+        }
+        .item {
+            display: flex;
+        }
+
+        .comments {
+            text-align: right;
+        }
+
+        .inner-comments {
+            margin: 0 0 0 2em;
+            border-left: 0.4em solid #F1F1F1;
+
+            .comments-box {
+                margin: 2em 2em;
+                width: 31.6em;
+            }
+        }
+
+        .time {
+            font-family: 'Lato', sans-serif;
+            margin-top: 1.3em;
+            text-align: center;
+            font-size: 8px;
+            color: #979796;
+        }
+
+        .comments-box {
+            height: 8.4em;
+            width: 34.5em;
+            margin-left: 2em;
+            padding: 2.1em 2.4em 1.8em 2.3em;
+            background: #F1F1F1;
+            border: 1px solid #BFBFBF;
+        }
+
+        .comment {
+            height: 3.5em;
+            font-family: 'Lato',sans-serif;
+            font-weight: normal;
+            line-height: 15px;
+            font-size: 12px;
+            text-align: left;
+            color: #777777;
+            overflow: hidden;
+        }
+    }
+
+    .tasks {
+        width: 100%;
+        padding: 3.2em 0 2em 3em;
+        background-color: #FFFFFF;
+
+        .task__title {
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            font-size: 1.4em;
+            color: #777777;
+        }
+
+        .todos {
+            margin-top: 2em;
+        }
+
+        .todo__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 44em;
+            padding: 1.2em;
+            border: none;
+            border-top: 2px solid #BFBFBF;
+        }
+
+        input[type="checkbox"] {
+            display:none;
+        }
+
+        input[type="checkbox"] + label span {
+            display:inline-block;
+            width:19px;
+            height:19px;
+            margin:-1px 4px 0 0;
+            vertical-align:middle;
+            background:url(/source/img/icon/unchecked.svg) no-repeat center/cover;
+            cursor:pointer;
+        }
+
+        input[type="checkbox"]:checked + label span {
+            background:url(/source/img/icon/checked.svg) no-repeat center/cover;
+        }
+
+        .todo-name {
+            font-family: 'Lato', sans-serif;
+            font-weight: 900;
+            font-size: 1.2em;
+            text-align: left;
+            color: #FD566F;
+        }
+
+        .todo-text {
+            width: 21em;
+            font-family: 'Lato',sans-serif;
+            font-size: 1.2em;
+            text-align: left;
+            color: #BFBFBF;
+            border: none;
+            background: transparent;
+        }
+
+        .todo-time {
+            position: relative;
+            font-family: 'Lato', sans-serif;
+            font-size: 1.2em;
+            color: #9C9C9C;
+            text-align: left;
+        }
+
+        .todo-time::before {
+            position: absolute;
+            top: 0;
+            left: -1.2em;
+            content: '';
+            height: 1em;
+            width: 1em;
+            background: url(/source/img/icon/clock.svg) no-repeat center;
+        }
+
+        .todo__item:nth-child(4) {
+            border-bottom: 2px solid #BFBFBF;
+        }
+
+        .todo__item:nth-child(2n + 2) {
+            background: #F1F1F1;
+        }
+    }
+
+    .container__inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1em;
+        width: 50.1em;
+
+        .items__score {
+            padding-bottom: 0;
+        }
+    }
+
+    .box-container {
+        width: 100%;
+        display: flex;
+        margin-top: 2em;
+        justify-content: space-between;
+    }
+
+    .graph {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            width: 1.1em;
+            height: 8.8em;
+            margin: 0 0.3em;
+            border: none;
+            border-radius: 1em;
+            background: linear-gradient(bottom , #8743B0 , #92A6EA);
+            overflow: hidden;
+        }
+
+        li {
+            border: none;
+            height: 10%;
+        }
+    }
+
+    .disabled {
+        background: #F6F6F6;
+    }
+
+    .box__title {
+        margin: 1.4em 0 1.3em 0;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 1.4em;
+        color: #777777;
+    }
+
+    .box__text {
+        margin-top: 23px;
+        padding-bottom: 11px;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+        color: #834FBA;
+    }
+
+    .shipment-text {
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+        color: #FD7858;
+    }
+
+    .shipment-content {
+        display: flex;
+        padding: 1em 3em;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .items__score {
+        position: relative;
+        padding-left: 1em;
+        padding-bottom: 3em;
+        font-family: 'Lato',sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+        color: #BFBFBF;
+    }
+
+    .triangle-up::before {
+        @include triangle(0.1em, calc(50% - 2.7em));
+    }
+
+    .triangle-down::before {
+        @include triangle(0.1em, calc(50% + 0.3em));
+    }
+
+    .map {
+        height: 11.5em;
+        width: 18.7em;
+    }
+}
