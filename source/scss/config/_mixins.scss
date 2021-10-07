@@ -10,11 +10,14 @@
 }
 
 @mixin header__btn ($image) {
-    height: 2em;
-    width: 2.7em;
-    margin: 0 1.8em;
+    display: block;
+    height: 73px;
+   /* width: 33%;*/
+    padding: 0 4em;
     border: none;
-    background: url($image) no-repeat center;
+    background: url($image) no-repeat;
+    background-position: calc(50%) calc(50%);
+    border-right:2px solid #F1F1F1;
 }
 
 @mixin header__text ($fs,$color){
