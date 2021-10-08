@@ -30,8 +30,8 @@
         }
 
         img {
-            height: 11.7em;
-            width: 58.2em;
+           /* height: 11.7em;
+            width: 58.2em;*/
             margin: 3.2em 0;
         }
 
@@ -54,6 +54,7 @@
             width: 2em;
             border: none;
             background: url(../img/header_settings/kebab_menu.png) no-repeat center/cover;
+            background-size: 70%;
         }
         
         .manthly-btn:nth-child(2){
@@ -123,7 +124,7 @@
         margin: 0 auto;
         height: 14.5em;
         width: 14.5em;
-        margin-bottom: 3em;
+        margin-bottom: 1em;
         border-radius: 50%;
     }
 

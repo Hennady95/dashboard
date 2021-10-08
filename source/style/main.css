@@ -379,7 +379,7 @@ textarea {
 
 * .wraper {
   position: relative;
-  width: 1368px;
+  max-width: 1368px;
   margin: 0 auto;
   font-size: 10px;
 }
@@ -557,7 +557,7 @@ textarea {
 }
 
 .header {
-  max-width: 129.8em;
+  max-width: 100%;
   padding-left: 7em;
   background: #FFFFFF;
 }
@@ -901,8 +901,8 @@ textarea {
 }
 
 .main .monthly-progress img {
-  height: 11.7em;
-  width: 58.2em;
+  /* height: 11.7em;
+            width: 58.2em;*/
   margin: 3.2em 0;
 }
 
@@ -927,6 +927,7 @@ textarea {
   width: 2em;
   border: none;
   background: url(../img/header_settings/kebab_menu.png) no-repeat center/cover;
+  background-size: 70%;
 }
 
 .main .monthly-progress .manthly-btn:nth-child(2) {
@@ -1004,7 +1005,7 @@ textarea {
   margin: 0 auto;
   height: 14.5em;
   width: 14.5em;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   border-radius: 50%;
 }
 
@@ -1580,9 +1581,17 @@ textarea {
     height: 3em;
     margin-right: 4.1em;
   }
+  .header .header__menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .header .header__statistics li {
     display: inline-block;
     padding: 1.5em 3em;
+  }
+  .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .main .monthly-progress {
     width: 66em;
@@ -1705,6 +1714,7 @@ textarea {
     overflow: scroll;
   }
   .main {
+    width: 100%;
     padding: 0;
   }
   .main .monthly-progress {
@@ -1742,10 +1752,12 @@ textarea {
     margin: 1em auto;
   }
   .main .box-container {
-    display: block;
+    /*display: block;*/
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .main .todos {
-    width: 33em;
+    width: 80%;
     overflow: scroll;
   }
   .main .tasks {
@@ -1784,7 +1796,7 @@ textarea {
 
 @media (max-width: 320px) {
   .header .search {
-    margin-left: 2.4em;
+    /*margin-left: 2.4em;*/
   }
   .main .monthly-progress {
     width: 100vw;

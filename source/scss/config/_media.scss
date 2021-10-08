@@ -21,11 +21,19 @@
             margin-right: 4.1em;
         }
 
+        .header__menu {
+            flex-wrap: wrap;
+        }
+
         .header__statistics li {
             display: inline-block;
             padding: 1.5em 3em;
         }
 
+    }
+
+    .container {
+        flex-wrap: wrap;
     }
 
     .main {
@@ -161,6 +169,7 @@
 
     .main {
 
+        width: 100%;
         padding: 0;
 
         .monthly-progress {
@@ -203,11 +212,12 @@
         }
 
         .box-container {
-            display: block;
+            /*display: block;*/
+            flex-wrap: wrap;
         }
 
         .todos {
-            width: 33em;
+            width: 80%;
             overflow: scroll;
         }
 
@@ -255,7 +265,7 @@
     
     .header {
         .search {
-            margin-left: 2.4em;
+            /*margin-left: 2.4em;*/
         }
     }
     .main {
